@@ -140,7 +140,7 @@ sudo nginx -t
 
 ![](https://velog.velcdn.com/images/alzkdpf000/post/8b4b3dff-812a-4338-89f5-4fa9a7a4a2d2/image.png)
 
-### 2.2 해결
+### 2.1 해결
 actions를 설정할 때 pem키와 $HOST로 안 바꾼 부분 때문에 아래와 같은 오류가 발생했습니다.
 
 
