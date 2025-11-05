@@ -85,8 +85,8 @@ public class DiaryDAO {
         diaryMapper.insert(diaryVO);
     }
 //    다이어리 상세 가져오기
-    public Optional<DiaryDTO> findByPostId(Long postId) {
-        return diaryMapper.selectByPostId(postId);
+    public Optional<DiaryDTO> findByPostId(Long postId, Long memberId) {
+        return diaryMapper.selectByPostId(postId,memberId);
     }
 
     //  다이어리 공개/비공개 변경

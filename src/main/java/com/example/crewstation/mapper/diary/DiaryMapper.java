@@ -63,7 +63,7 @@ public interface DiaryMapper {
     public void insert(DiaryVO diaryVO);
 
 //  다이어리 상세
-    public Optional<DiaryDTO> selectByPostId(Long postId);
+    public Optional<DiaryDTO> selectByPostId(@Param("postId") Long postId,@Param("memberId") Long memberId);
 //  다이어리 공개/비공개 변경
     public void updateSecret(@Param("postId") Long postId,@Param("secret") Secret secret);
 //   댓글 개수 증가 / 감소
