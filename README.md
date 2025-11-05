@@ -46,7 +46,12 @@
 
 ### ⚙️ 2. Workflow 파일 생성  
 
-📄 [`load_balancing_deploy.yml`](https://github.com/alzkdpf000/actions-load-balancing-app/blob/master/.github/workflows/load_balancing_deploy.yml)
+| 파일 | 설명 | 링크 |
+|------|--------|--------|
+|`load_balancing_deploy.yml`| GitHub Actions 배포 설정| 🔗 [보기](https://github.com/alzkdpf000/actions-load-balancing-app/blob/master/.github/workflows/load_balancing_deploy.yml)|
+|`Dockerfile`| Docker 빌드 설정| 📦 [보기](https://github.com/alzkdpf000/actions-load-balancing-app/blob/master/Dockerfile)|
+
+
 
 ## 🌐 NGINX Load Balancer 설정
 
