@@ -67,7 +67,8 @@ public class DiaryTransactionService {
         DiaryDetailDTO diaryDetailDTO = new DiaryDetailDTO();
         postDAO.updateReadCount(postId);
         List<CountryDTO> countries = diaryCountryDAO.findCountryByPostId(postId);
-        Optional<DiaryDTO> byPostId = diaryDAO.findByPostId(postId, customUserDetails.getId());
+        Long memberId = customUserDetails != null ? customUserDetails.getId() : -1L;
+        Optional<DiaryDTO> byPostId = diaryDAO.findByPostId(postId, memberId );
 
 
         byPostId.ifPresent(diaryDTO -> {
