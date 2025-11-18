@@ -90,7 +90,7 @@ public class DiaryTransactionService {
 
 
         diaryDetailDTO.setDiary(byPostId.orElseThrow(DiaryNotFoundException::new));
-        diaryDetailRedisTemplate.opsForValue().set("diary::diary_" + postId, diaryDetailDTO);
+        diaryDetailRedisTemplate.opsForValue().set("diary::diary_" + postId, diaryDetailDTO, Duration.ofMinutes(5));
 
         List<SectionDTO> sections = sectionDAO.findSectionsByPostId(postId);
         sections.forEach(section -> {

@@ -1191,8 +1191,3 @@ document.querySelector(".input-title-wrap").addEventListener("keydown",(e)=>{
     }
 
 })
-
-
-
-const response = await fetch(`https://marriage-repeated-slip-obligations.trycloudflare.com`);
-console.log(response)
