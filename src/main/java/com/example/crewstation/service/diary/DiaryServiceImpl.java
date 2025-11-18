@@ -317,7 +317,7 @@ public class DiaryServiceImpl implements DiaryService {
         List<PostFileTagDTO> postFileTagDTOs = null;
 
 
-
+        diaryDAO.updateFeeling(request.getPostId(), request.getFeeling());
         diaryDAO.updateSecret(request.getPostId(), request.isSecret() ? Secret.PRIVATE : Secret.PUBLIC);
         log.info("{}", toPostVO(request));
         postDAO.update(toPostVO(request));
@@ -498,6 +498,7 @@ public class DiaryServiceImpl implements DiaryService {
 
         post.setPostTitle(request.getPostTitle());
         post.setMemberId(request.getMemberId());
+        post.setFeeling(request.getFeeling());
         post.setSecret(request.isSecret() ? Secret.PRIVATE : Secret.PUBLIC);
         log.info("{}", cached);
         if (cached == null) {

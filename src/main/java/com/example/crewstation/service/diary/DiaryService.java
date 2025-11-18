@@ -76,6 +76,7 @@ public interface DiaryService {
         return DiaryVO.builder()
                 .diarySecret(postDTO.getSecret())
                 .postId(postDTO.getPostId())
+                .feeling(postDTO.getFeeling())
                 .build();
     }
     default List<DiaryCountryVO> toDiaryCountryVO(PostDiaryDetailTagDTO postDiaryDetailTagDTO) {

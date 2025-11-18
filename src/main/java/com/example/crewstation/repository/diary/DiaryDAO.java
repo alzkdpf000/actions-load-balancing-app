@@ -32,7 +32,7 @@ public class DiaryDAO {
     public List<LikedDiaryDTO> findDiariesLikedByMemberId(Long memberId, ScrollCriteria criteria) {
         return diaryMapper.findDiariesLikedByMemberId(memberId, criteria);
     }
-
+    public void updateFeeling(@Param("postId")Long postId,@Param("feeling")int feeling);
     // 특정 회원이 좋아요한 일기 수 조회
     public int countDiariesLikedByMemberId(Long memberId) {
         return diaryMapper.countDiariesLikedByMemberId(memberId);
@@ -93,6 +93,7 @@ public class DiaryDAO {
     public void updateSecret(Long postId, Secret secret){
         diaryMapper.updateSecret(postId,secret);
     }
+    public void updateFeeling(Long postId,int feeling){diaryMapper.updateFeeling(postId,feeling);}
 
     //   댓글 개수 증가 / 감소
     public void changeReplyCount(int count,Long postId){

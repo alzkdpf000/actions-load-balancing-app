@@ -20,6 +20,7 @@ public class DiaryDTO {
     private String postReadCount;
     private Long diaryId;
     private Long crewId;
+    private int feeling;
     private String crewName;
     private String memberFilePath;
     private String diaryFilePath;

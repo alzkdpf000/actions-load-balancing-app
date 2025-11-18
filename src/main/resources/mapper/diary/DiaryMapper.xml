@@ -296,6 +296,7 @@
                vpd.post_read_count,
                vpd.created_datetime,
                vpd.updated_datetime,
+               vpd.feeling,
                vpd.diary_secret,
                vpd.diary_reply_count,
                vfmf.file_path as member_file_path,
@@ -312,6 +313,13 @@
         update tbl_diary
         set diary_secret = #{secret}
         where post_id = #{postId}
+    </update>
+
+
+    <update id="updateFeeling">
+        update tbl_diary
+        set feeling = #{feeling}
+        where post_id =#{postId}
     </update>
 
     <update id="updateReplyCount">

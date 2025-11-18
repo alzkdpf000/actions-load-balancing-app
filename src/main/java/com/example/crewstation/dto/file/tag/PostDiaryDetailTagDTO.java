@@ -23,6 +23,7 @@ public class PostDiaryDetailTagDTO {
     private Long diaryPathId;
     private List<ImageDTO> images;
     private List<Long> countryIds;
+    private int feeling;
     private Long postSectionId;
     private Long fileId;
     private Long thumbnail;

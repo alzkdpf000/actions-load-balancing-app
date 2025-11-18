@@ -20,3 +20,6 @@ ALTER TABLE tbl_diary
 
 ALTER TABLE tbl_diary
     ALTER COLUMN post_id DROP IDENTITY;
+
+ALTER TABLE tbl_diary
+    ADD COLUMN feeling SMALLINT;

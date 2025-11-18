@@ -15,6 +15,7 @@ public class DiaryVO extends Period {
     private Long postId;
     private Secret diarySecret;
     private String diaryLikeCount;
+    private int feeling;
     private int diaryReplyCount;
     private String diaryCountryPathId;
 }

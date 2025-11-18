@@ -126,7 +126,8 @@ select id,
        updated_datetime,
        diary_secret,
        diary_like_count,
-       diary_reply_count
+       diary_reply_count,
+       feeling
 from tbl_post tp
          join tbl_diary td on tp.id = td.post_id
     );

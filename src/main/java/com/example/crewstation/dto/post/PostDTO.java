@@ -14,6 +14,7 @@ import org.springframework.stereotype.Component;
 public class PostDTO {
     private Long postId;
     private String postTitle;
+    private int feeling;
     private Status postStatus;
     private int postReadCount;
     private Long memberId;

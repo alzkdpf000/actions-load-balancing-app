@@ -925,3 +925,66 @@ memberSearch.addEventListener("keydown",async (e)=>{
         await diaryWriteService.search(diaryWriteLayout.showList,memberSearch.value.trim());
     }
 })
+
+
+
+let aiBtnCheck = false;
+let aiBtnDCheck = false;
+const aiFeeling =  document.getElementById("aiFeeling");
+const aiFeelingBtn = document.getElementById("aiFeelingBtn");
+const aiResultInput = document.createElement("input");
+const loading = document.getElementById("loading");
+aiFeelingBtn.addEventListener("click",async(e)=>{
+    if(aiBtnDCheck){
+        return;
+    }
+    aiBtnDCheck = true;
+    let aiText = document.querySelector(".input-title-wrap").value;
+    document.querySelectorAll(".post-input").forEach((text)=>{
+        aiText += text.value
+    })
+    console.log("입력 데이터 출력해보자")
+    console.log(aiText)
+    loading.style.display = "block";
+    const {result,status} = await diaryWriteService.checkFeeling(aiText);
+    setTimeout(()=>{
+        aiBtnDCheck = false;
+    },500);
+    console.log(result,status)
+    aiFeeling.src=`/images/00${result}.png`;
+    loading.style.display = "none";
+    if(status !== 200){
+        toastModal(result)
+        return;
+    }
+    aiFeeling.style.display = "block";
+    aiResultInput.name = "feeling"
+    aiResultInput.value=result;
+
+
+
+    aiFeelingBtn.style.right = "19%";
+    aiFeelingBtn.textContent = "다시하기";
+    aiFeelingBtn.style.display = "none";
+
+    aiBtnCheck = true;
+})
+
+
+
+document.querySelector(".post-container").addEventListener("keydown",(e)=>{
+    console.log(e.target.className);
+    if(e.target.className === "post-input" && aiBtnCheck ){
+        aiFeelingBtn.style.display = "block";
+        aiBtnCheck = false;
+    }
+
+})
+
+document.querySelector(".input-title-wrap").addEventListener("keydown",(e)=>{
+    if(aiBtnCheck){
+        aiFeelingBtn.style.display = "block";
+        aiBtnCheck = false;
+    }
+
+})
