@@ -37,6 +37,8 @@ public interface DiaryMapper {
     public void deleteLike(@Param("memberId") Long memberId,
                            @Param("diaryId") Long diaryId);
 
+    public void updateFeeling(@Param("postId")Long postId,@Param("feeling")int feeling);
+
     // 추가: like_id 조회
     Long findLikeId(@Param("memberId") Long memberId, @Param("diaryId") Long diaryId);
 

@@ -32,7 +32,6 @@ public class DiaryDAO {
     public List<LikedDiaryDTO> findDiariesLikedByMemberId(Long memberId, ScrollCriteria criteria) {
         return diaryMapper.findDiariesLikedByMemberId(memberId, criteria);
     }
-    public void updateFeeling(@Param("postId")Long postId,@Param("feeling")int feeling);
     // 특정 회원이 좋아요한 일기 수 조회
     public int countDiariesLikedByMemberId(Long memberId) {
         return diaryMapper.countDiariesLikedByMemberId(memberId);
