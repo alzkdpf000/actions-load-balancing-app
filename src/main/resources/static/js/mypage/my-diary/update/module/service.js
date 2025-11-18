@@ -22,7 +22,7 @@ const diaryWriteService = (() => {
     }
     const checkFeeling = async (message) => {
         console.log( JSON.stringify({"message" :message}))
-        const response = await fetch(`https://collections-differ-barely-muscles.trycloudflare.com/api/feel-check`, {
+        const response = await fetch(`https://colin-agriculture-evening-sat.trycloudflare.com/api/feel-check`, {
             method: 'POST',
             body: JSON.stringify({"message" :message}),
             headers: {
