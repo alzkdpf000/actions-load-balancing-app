@@ -532,6 +532,7 @@ contentList?.addEventListener("click", (e) => {
 
     // PC에서 불러오기 / 다시 올리기
     if (e.target.closest(".pc-upload-btn") || e.target.closest(".return-img")) {
+
         const input = pickFile();
         input.onchange = () => {
             const f = input.files?.[0];
@@ -566,13 +567,14 @@ contentList?.addEventListener("click", (e) => {
                 ).style.display = "list-item";
                 iv.src = url;
                 if (e.target.closest(".return-img")) {
-                    fileBuffer.splice(+block.dataset.idx, 1);
+                    // fileBuffer.splice(+block.dataset.idx, 1);
                 }
                 addFiles(input.files, +block.dataset.idx);
             }
             input.remove();
         };
         input.click();
+
         return;
     }
 
@@ -896,9 +898,11 @@ complteBtn.addEventListener("click", (e) => {
     let count = 0;
     let oldCount = 0;
     let tagCount = 0;
+    console.log(fileBuffer)
     document.querySelectorAll(".post-img-content-wrapper").forEach((data) => {
         tagCount = 0;
         console.log(data)
+        console.log("시작부분입니다")
         const idx = +data.dataset.idx;
         newFileIndex = idx;
         const fileId = data.dataset?.postsectionid;
@@ -1041,6 +1045,7 @@ complteBtn.addEventListener("click", (e) => {
     text += `<input type="hidden" name="thumbnail" value="${thumbnail}">`
     text += `<input type="hidden" name="newThumbnail" value="${newThumbnail}">`
     deleteWrap.innerHTML = text;
+
     form.submit();
 
 });

@@ -391,7 +391,6 @@ const addPairWithFile = () => {
     block = sampleBlock.cloneNode(true);
     block.querySelector(".content-del").style.display = "block";
     resetBlock(block);
-    fileBuffer.push("");
     // }
     block.dataset.idx = String(idx);
     const beforeBlk = findBlockBefore(idx);
@@ -523,13 +522,14 @@ contentList?.addEventListener("click", (e) => {
                 ).style.display = "list-item";
                 iv.src = url;
                 if (e.target.closest(".return-img")) {
-                    fileBuffer.splice(+block.dataset.idx, 1);
+                    // fileBuffer.splice(+block.dataset.idx, 1);
                 }
                 addFiles(input.files, +block.dataset.idx);
             }
             input.remove();
         };
         input.click();
+        console.log(fileBuffer);
         return;
     }
 
