@@ -630,7 +630,7 @@ public class DiaryServiceImpl implements DiaryService {
             throw new PostNotFoundException("이미 삭제된 게시글입니다.");
         }
         diaryDAO.updateSecret(diaryId, secret);
-
+        redisTemplate.delete("diary::diary_" + diaryId);
         return message;
     }
 
