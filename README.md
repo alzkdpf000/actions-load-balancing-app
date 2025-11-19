@@ -252,7 +252,7 @@ actions를 설정할 때 pem키와 $HOST로 안 바꾼 부분 때문에 아래�
 
 ### 3.1 해결
 <br>
-[https://raw.githubusercontent.com](https://raw.githubusercontent.com/ohgzone/file1/main/aihub_coupus.csv) 대신 다른 데이터를 찾아 해결했습니다.
+(https://raw.githubusercontent.com](https://raw.githubusercontent.com/ohgzone/file1/main/aihub_coupus.csv) 대신 다른 데이터를 찾아 해결했습니다.
 
 
 ### 4.
