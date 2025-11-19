@@ -54,7 +54,7 @@ public class SmsService {
         String code = createCode();
         Message message = new Message();
         message.setTo(phoneNumber);
-        message.setFrom("01083688745");
+        message.setFrom("01031128286");
         message.setText("Crew Station 주문 번호: " + code);
         try {
             SingleMessageSentResponse response = this.messageService.sendOne(new SingleMessageSendingRequest(message));
