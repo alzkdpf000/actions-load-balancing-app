@@ -24,7 +24,8 @@ if (toggleBtn && dropdown) {
             if (orderType === item.dataset.value) {
                 return;
             }
-            orderType = item.dataset.value
+            orderType = item.dataset.value;
+            checkMore = true;
             await showList(page, keyword, orderType, category, true);
             dropdown.style.display = "none";
 
