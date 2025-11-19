@@ -25,6 +25,7 @@ console.log(postId);
 document.addEventListener("DOMContentLoaded",async (e)=>{
     const replies = await replyService.getList(postId,replyLayout.showList,1);
     document.querySelector("span.go-reply-icon").nextElementSibling.textContent = replies.criteria.total;
+    document.querySelector("span.total").textContent = replies.criteria.total;
 })
 
 const pagination = document.getElementById("replyPageWrap");
