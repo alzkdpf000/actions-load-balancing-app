@@ -153,6 +153,7 @@ FastAPI 서버에서 **Multinomial Naive Bayes(나이브 베이즈)** 모델을 
 | **한국어 감정 텍스트 데이터** | 감성 카테고리가 정리된 텍스트 데이터 | 🔗 [https://aihub.or.kr](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=263) |
 
 
+
 ## 🔧 모델 설명
 
 ### ✔️ 알고리즘  
@@ -166,6 +167,7 @@ FastAPI 서버에서 **Multinomial Naive Bayes(나이브 베이즈)** 모델을 
 3. MultinomialNB 학습
 4. `feeling_model.pkl` 로 모델 저장 후 FastAPI에 로드
 
+#### 🔗 [모델 훈련 코드](https://github.com/alzkdpf000/study-machine-learning/blob/master/b_classifier/feeling.ipynb)
 
 ## ⚙️ FastAPI 감정 분석 엔드포인트
 
