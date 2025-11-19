@@ -38,7 +38,7 @@ public class ReplyServiceImpl implements ReplyService {
                                        Long postId,
                                        CustomUserDetails customUserDetails) {
         ReplyCriteriaDTO replyCriteriaDTO = new ReplyCriteriaDTO();
-        Criteria criteria = new Criteria(page, replyDAO.findAllCountByPostId(postId), 5, 5);
+        Criteria criteria = new Criteria(page, replyDAO.findAllCountByPostId(postId),5);
         List<ReplyDTO> replies = replyDAO.findAllByPostId(postId, criteria);
         replies.forEach(reply -> {
             if (reply.getFilePath() != null) {
