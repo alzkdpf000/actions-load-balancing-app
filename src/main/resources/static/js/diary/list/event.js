@@ -26,7 +26,8 @@ if (toggleBtn && dropdown) {
             }
             orderType = item.dataset.value;
             checkMore = true;
-            page = 1
+            page = 1;
+            checkScroll = true;
             await showList(page, keyword, orderType, category, true);
             dropdown.style.display = "none";
 
