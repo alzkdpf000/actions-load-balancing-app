@@ -22,8 +22,10 @@ let check = true;
 console.log(page);
 console.log(postId);
 
-replyService.getList(postId,replyLayout.showList,page);
-
+document.addEventListener("DOMContentLoaded",async (e)=>{
+    const replies = await replyService.getList(postId,replyLayout.showList,1);
+    document.querySelector("span.go-reply-icon").nextElementSibling.textContent = replies.criteria.total;
+})
 
 const pagination = document.getElementById("replyPageWrap");
 pagination.addEventListener("click",async (e)=>{
