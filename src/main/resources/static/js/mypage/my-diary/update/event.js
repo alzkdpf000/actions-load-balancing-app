@@ -1045,7 +1045,9 @@ complteBtn.addEventListener("click", (e) => {
     text += `<input type="hidden" name="thumbnail" value="${thumbnail}">`
     text += `<input type="hidden" name="newThumbnail" value="${newThumbnail}">`
     deleteWrap.innerHTML = text;
-
+    if(!aiBtnCheck){
+        toastModal("감정분석을 완료해주세요.")
+    }
     form.submit();
 
 });

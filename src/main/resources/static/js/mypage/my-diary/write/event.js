@@ -861,6 +861,9 @@ complteBtn.addEventListener("click", (e) => {
     });
     console.log(123);
     console.log("작성 클릭");
+    if(!aiBtnCheck){
+        toastModal("감정분석을 완료해주세요.")
+    }
     form.submit();
 });
 
