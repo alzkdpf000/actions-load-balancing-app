@@ -724,8 +724,8 @@ div.search-page-empty > p{
 
 .unlock, .lock {
   position: relative;
-  width: 79px;
-  left: 132px;
+  width: 85px;
+  left: 142px;
 }
 
 .hidden {
@@ -815,7 +815,7 @@ div.search-page-empty > p{
 
 .btn-container{
   display: flex;
-  gap: 95px;
+  gap: 103px;
 }
 
 
