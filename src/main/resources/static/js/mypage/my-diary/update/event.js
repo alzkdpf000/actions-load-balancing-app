@@ -1081,6 +1081,7 @@ function toastModal(msg) {
     }, 3000);
 }
 
+
 const secretCheckbox = document.querySelector(".secret-checkbox");
 const secretToggle = document.querySelector(".secret-toggle");
 const lockIcon = document.querySelector(".lock");
