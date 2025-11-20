@@ -937,35 +937,35 @@ img.member-profile-img{
   height: 100%;
 }
 
-.input-title-wrapper {
-  width: 60%;
-}
+/*.input-title-wrapper {*/
+/*  width: 60%;*/
+/*}*/
 
-.input-tag-wrapper {
-  width: 60%;
-}
+/*.input-tag-wrapper {*/
+/*  width: 60%;*/
+/*}*/
 
-#aiFeeling {
-  position: absolute;
-  width: 100px;
-  height: 150px;
-  top: -10%;
-  right: 28%;
-  display: none;
-}
+/*#aiFeeling {*/
+/*  position: absolute;*/
+/*  width: 100px;*/
+/*  height: 150px;*/
+/*  top: -10%;*/
+/*  right: 28%;*/
+/*  display: none;*/
+/*}*/
 
-#aiFeelingBtn{
-  position: absolute;
-  width: 100px;
-  top: -10%;
-  height: 150px;
-  right: 28%;
-  padding: 0 16px;
-  border-radius: 4px;
-  background: #647FBC;
-  color: #fff;
-  font-size: 14px;
-}
+/*#aiFeelingBtn{*/
+/*  position: absolute;*/
+/*  width: 100px;*/
+/*  top: -10%;*/
+/*  height: 150px;*/
+/*  right: 28%;*/
+/*  padding: 0 16px;*/
+/*  border-radius: 4px;*/
+/*  background: #647FBC;*/
+/*  color: #fff;*/
+/*  font-size: 14px;*/
+/*}*/
 
 
 .spinner {
