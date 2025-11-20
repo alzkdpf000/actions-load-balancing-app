@@ -861,6 +861,10 @@ complteBtn.addEventListener("click", (e) => {
     });
     console.log(123);
     console.log("작성 클릭");
+    // ai부분
+    // if(!aiBtnCheck){
+    //     toastModal("감정분석을 완려해주세요.")
+    // }
     form.submit();
 });
 
@@ -946,20 +950,21 @@ aiFeelingBtn.addEventListener("click",async(e)=>{
     console.log("입력 데이터 출력해보자")
     console.log(aiText)
     loading.style.display = "block";
-    const {result,status} = await diaryWriteService.checkFeeling(aiText);
-    setTimeout(()=>{
-        aiBtnDCheck = false;
-    },500);
-    console.log(result,status)
-    aiFeeling.src=`/images/00${result}.png`;
-    loading.style.display = "none";
-    if(status !== 200){
-        toastModal(result)
-        return;
-    }
+    // const {result,status} = await diaryWriteService.checkFeeling(aiText);
+    // setTimeout(()=>{
+    //     aiBtnDCheck = false;
+    // },500);
+    // console.log(result,status)
+    // aiFeeling.src=`/images/00${result}.png`;
+    // loading.style.display = "none";
+    // if(status !== 200){
+    //     toastModal(result)
+    //     return;
+    // }
     aiFeeling.style.display = "block";
     aiResultInput.name = "feeling"
-    aiResultInput.value=result;
+    aiResultInput.value=0;
+    // aiResultInput.value=result;
 
 
 

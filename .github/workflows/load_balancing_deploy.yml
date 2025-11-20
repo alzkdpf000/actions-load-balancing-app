@@ -3,7 +3,7 @@ name: load_balancing_deploy
 on:
   push:
     branches:
-      - master
+      - old
 
 jobs:
   deploy:
