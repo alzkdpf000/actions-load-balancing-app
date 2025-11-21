@@ -244,7 +244,7 @@ const tagPin = `
                                 <div class="mention-profile">
                                     <a class="profile-a">
                                         <div class="mention-profile-img">
-                                            <img src="https://image.ohousecdn.com/i/bucketplace-v2-devel…uploads/default_images/avatar.png?w=144&h=144&c=c">
+                                            <img src="https://image.ohousecdn.com/i/bucketplace-v2-development/uploads/default_images/avatar.png?w=144&h=144&c=c">
                                         </div>
                                         <span id="mention-name">크루원 이름</span>
                                     </a>
