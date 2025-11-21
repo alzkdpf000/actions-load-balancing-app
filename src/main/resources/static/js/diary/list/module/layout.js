@@ -23,6 +23,7 @@ const diariesListLayout = (() => {
             }
 
 
+
                 text += `
             <div class="card-feed-item-wrap">
                                     <article class="card-collection-item">
