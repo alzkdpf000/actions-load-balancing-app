@@ -21,7 +21,6 @@ const diariesListLayout = (() => {
             }else{
                 filePath = "https://image.ohousecdn.com/i/bucketplace-v2-development/uploads/default_images/avatar.png?w=144&h=144&c=c";
             }
-
                 text += `
             <div class="card-feed-item-wrap">
                                     <article class="card-collection-item">
