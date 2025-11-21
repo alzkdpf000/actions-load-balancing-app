@@ -99,7 +99,8 @@ MZ·Z세대 중심의 경험 소비 트렌드 강화
 | **Infra**       | AWS EC2, AWS IAM, AWS S3 |
 | **Tool**        | VS Code, IntelliJ IDEA |
 | **API**         | Kakao Login, Kakao Map, Kakao 주소, SMTP Gmail API, REST API, Lombok, MyBatis, OAuth 2.0, Google Login, Boot Pay, Naver Login, JWT, Spring Security, CoolSMS, Swagger UI |
-| **기타**        | Git, GitHub, Slack, Postman, Sourcetree |
+| **AI**        | Fast API, Naive Bayes, Kiwi |
+| **기타**        | Git, GitHub, Slack, Postman, Sourcetree, CloudFlare |
 | **테스트**      | JUnit5 |
 
 
