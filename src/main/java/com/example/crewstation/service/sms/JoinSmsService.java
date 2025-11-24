@@ -48,10 +48,10 @@ public class JoinSmsService {
         String code = createCode();
         Message message = new Message();
         message.setTo(phoneNumber);
-        message.setFrom("01083688745");
+        message.setFrom("01031128286");
         message.setText("Crew Station 회원가입 인증 번호: " + code);
         try {
-//            SingleMessageSentResponse response = this.messageService.sendOne(new SingleMessageSendingRequest(message));
+            SingleMessageSentResponse response = this.messageService.sendOne(new SingleMessageSendingRequest(message));
 //            log.info("Sending sms message to phone number " + response);
             log.info("code {}:::::::::", code);
         } catch (Exception e) {
