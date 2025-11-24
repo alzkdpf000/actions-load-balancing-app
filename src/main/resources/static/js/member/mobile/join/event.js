@@ -260,8 +260,10 @@ passwordCheckInput.addEventListener("blur", (e) => {
         passwordCheckError.style.display = "block";
         passwordCheckError.firstElementChild.textContent =
             "비밀번호가 다릅니다.";
+        passwordCheckInput.classList.add("error");
     } else if (passwordInput.value.trim() === passwordCheckInput.value.trim()) {
         passwordCheckError.style.display = "none";
+        passwordCheckInput.classList.remove("error");
     }
 });
 
