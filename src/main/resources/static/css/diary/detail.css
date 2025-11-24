@@ -475,7 +475,7 @@ input, textarea, select {
     width: 17px;
     height: 17px;
     padding: 0px;
-    background: rgba(10, 165, 255, 0.8);
+    background: rgb(100, 127, 188);
     border-radius: 50%;
     border: none;
     display: flex;
@@ -544,7 +544,7 @@ input, textarea, select {
 
 .mention-profile {
     width: 140px;
-    height: 35px;
+    height: 40px;
     box-sizing: border-box;
     padding: 10px 0px 10px 10px;
     border-radius: 4px;
